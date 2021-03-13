@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <title>Homey Kitchen </title>
+ <style>
+ /* Задаем размеры нашей странице и блокам */
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 колонок, каждая по 1 fr */
+  grid-template-rows: 500px 300px 400px 500px; /* высота 5 строк, заданная в px */
+  grid-gap: 1em; /* расстояние между строками */
+  height: 100%;  /* высота элементов в процентах */
+  margin: 0;  /* убираем внешние отступы со всех сторон */
+  overflow: auto;  /* полоса прокрутки будет добавлена автоматически при переполнении элемента */
+}
+
+/* Задаем охват ячеек с помощью ключевого слова span */
+header,
+section,
+footer {
+  grid-column: 1 / span 5;
+}
+
+main {
+  grid-column: 1 / span 2;
+}
+
+aside {
+  grid-column: span 3;
+}
+
+
+/* стили */
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+  padding: 1em 0;
+}
+
+header {
+  background-image: url('back1.png');
+  background-size: 100% 100% ; /* размер фона ширина/высота */
+  opacity: 0.8; /* прозрачность фона, где 0-полная прозрачность,1-непрозрачность */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-image: url('O_nas.jpg');
+  background-size: 100% 100% ; /* размер фона ширина/высота */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside,
+section{
+  background: #614f49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  background-image: url('flour_eggs.jpeg');
+  background-size: 100% 100% ; /* размер фона ширина/высота */
+  opacity: 0.5; /* прозрачность фона */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 10px; /* Значение полей */
+   }
+   ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 100px; /* Отступ слева */
+    border: 1px solid #ffffff; /* Рамка вокруг текста */
+    padding: 5px; /* Поля вокруг текста */
+   }
+li{
+   list-style-type: disc;
+   }
+ </style>
+</head>
+<body>
+ <header>
+ <font color="#ffffff">
+  <center>
+  <ul class="hr">
+  <li>О нас</li>
+  <li>Рецепты</li>
+  <li>Статьи</li>
+  <li>Контакты</li>
+  </ul>
+  <h1> Homey Kitchen</h1>
+  <h2 align="center">
+  <pre style="background-color: #614f49">
+  Сайт аппетитных и качественных рецептов</pre>
+  </h2>
+  </center>
+  </font>
+</header>
+<main>
+/* картинка */
+</main>
+<aside>
+  <font color="#ffffff">
+  <center><h1>О нас</h1></center>
+  <p align="center">У нас Вы сможете найти различные рецепты вкусных блюд, а главное без труда приготовить их в домашней обстановке! </p>
+  <p align="center">Достаточно просто следовать нашей подробной инструкции с пошаговыми фотографиями. </p>
+  <p align="center">Мы стремимся к тому, чтобы в Вашем распоряжении находились тысячи идей, как приготовить то или иное блюдо.</p>
+  <p align="center">Мы верим, что у Вас все получится!</p>
+  </font>
+</aside>
+<section>
+<font color="#ffffff">
+<center>
+<h1>Наши рецепты</h1>
+<table border="0" cellspacing="50" cellpadding="30" width="90%" height="200">
+<tr align="left">
+<td>Тыквенный крем-суп</td>
+<td>Лобно из красной фасоли</td> 
+<td>Овощная паста с грибами</td> 
+</tr>
+<tr>
+<td>ячейка 1, второй ряд pumpkin_soup.jpeg</td>
+<td>ячейка 2, второй ряд red_bean_lobio.jpg</td>
+<td>ячейка 3, второй ряд pasta_mushroom.jpg</td>
+</tr>
+</table>
+</center>
+</font>
+</section>
+<footer>
+ <font color="#ffffff">
+ <h1>Начните готовить прямо сейчас!</h1>
+  <h3>Категории рецептов:</h3>
+<li>Завтраки</li>
+<li>Бульоны и супы</li>
+<li>Горячие блюда</li>
+<li>Гарниры</li> 
+<li>Салаты</li> 
+<li>Закуски</li>   
+<li>Напитки</li>
+<li>Соусы</li>
+<li>Десерты</li>
+<li>Выпечка</li>
+<li>Заготовки</li>
+</font>
+</footer>
+</body>
+</html>
+
+
+
+
+
