@@ -10,7 +10,7 @@
      p {font-family: Verdana,"VerdanaTM"}
      li {font-family: Verdana,"VerdanaTM"}
      td {font-family: Verdana,"VerdanaTM"}
-     
+
  /* Задаем размеры нашей странице и блокам */
 body {
   display: grid;
@@ -49,10 +49,11 @@ body {
 header {
   background-image: url('back1.png');
   background-size: 100% 100% ; /* размер фона ширина/высота */
-  opacity: 0.8; /* прозрачность фона, где 0-полная прозрачность,1-непрозрачность */
+  opacity: 0.85; /* прозрачность фона, где 0-полная прозрачность,1-непрозрачность */
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #614f49;
 }
 
 main {
@@ -61,6 +62,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #614f49;
 }
 
 aside,
@@ -69,6 +71,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #614f49;
 }
 
 footer{
@@ -78,6 +81,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #614f49;
 }
 
 
@@ -88,8 +92,9 @@ ul.hr {
    ul.hr li {
     display: inline-block; /* Отображать как строчный элемент */
     margin: 0 3em 0 3em;/* Отступ слева */
-    border: 1px solid #ffffff; /* Рамка вокруг текста */
+    border: 1px solid #614f49; /* Рамка вокруг текста */
     padding: 2px 7px; /* Поля вокруг текста */
+    background: rgba(97,79,73,.3); /*Прозрачность и цвет фона */
    }
 li{
    list-style-type: circle;
@@ -97,6 +102,14 @@ li{
    font-weight: bold;
    font-size: 16pt;
    }
+a{
+       color: #ffffff; /* Цвет обычной ссылки */
+       text-decoration: none; /* Убираем подчеркивание у ссылок */
+  }
+a:hover {
+       color: #6e4d38; /* Цвет ссылки при наведении на нее курсора мыши */
+
+  }
  </style>
 </head>
 
@@ -105,14 +118,14 @@ li{
  <font color="#ffffff">
   <center>
   <ul class="hr">
-  <li>О нас</li>
-  <li>Рецепты</li>
-  <li>Статьи</li>
-  <li>Контакты</li>
+    <li><a href="file:///C:/Users/%D0%90%D1%80%D0%B8%D0%BD%D0%B0/Desktop/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/github/project1/try1.html">О нас</a></li>
+    <li><a href="file:///C:/Users/%D0%90%D1%80%D0%B8%D0%BD%D0%B0/Desktop/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/github/project1/try1.html">Рецепты</a></li>
+    <li><a href="file:///C:/Users/%D0%90%D1%80%D0%B8%D0%BD%D0%B0/Desktop/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/github/project1/try1.html">Статьи</a></li>
+    <li><a href="file:///C:/Users/%D0%90%D1%80%D0%B8%D0%BD%D0%B0/Desktop/%D0%A3%D1%87%D0%B5%D0%B1%D0%B0/github/project1/try1.html">Контакты</a></li>
   </ul>
   <h1> <big><big><big><big>HOMEY KITCHEN </big></big></big></big></h1>
   <h2 align="center">
-  <pre style="background-color: #614f49">
+  <pre style="border: 1px solid #614f49; background-color: rgba(97,79,73,.5)">
   Сайт аппетитных и качественных рецептов</pre>
   </h2>
   </center>
@@ -160,9 +173,9 @@ li{
 <footer>
 
  <font color="#ffffff">
-     
+
  <h1>
-     <pre style="background-color: #614f49">
+     <pre style="border: 1px solid #614f49; background-color: rgba(97,79,73,.5)">
           Начните готовить прямо сейчас!          </h1>
  <h2>Категории рецептов:</h2>
  <table border="0" cellspacing="5" cellpadding="10" width="90%" height="200">
@@ -182,18 +195,13 @@ li{
              <li>Соусы</li>
              <li>Десерты</li>
              <li>Выпечка</li>
-             <li>Заготовки</li>     
+             <li>Заготовки</li>
          </td>
      </tr>
  </table>
-  
+
 </figure>
 </font>
 </footer>
 </body>
 </html>
-
-
-
-
-
