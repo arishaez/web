@@ -4,6 +4,13 @@
  <meta charset="UTF-8">
  <title>Homey Kitchen </title>
  <style>
+     h1 {font-family: Hiragino Sans GB,"HiraginoSansGB-W3"}
+     h2 {font-family: Hiragino Sans GB,"HiraginoSansGB-W3"}
+     h3 {font-family: Hiragino Sans GB,"HiraginoSansGB-W3"}
+     p {font-family: Arial,"ArialMT"}
+     li {font-family: Arial,"ArialMT"}
+     td {font-family: Arial,"ArialMT"}
+     
  /* Задаем размеры нашей странице и блокам */
 body {
   display: grid;
@@ -65,14 +72,13 @@ section{
 }
 
 footer{
-  background-image: url('flour_eggs.jpeg');
-  background-size: 100% 100% ; /* размер фона ширина/высота */
-  opacity: 0.5; /* прозрачность фона */
+  background-image: url('last_bg.png');
+  background-size: 100% 100%;/* размер фона ширина/высота */
+  opacity: 1; /* прозрачность фона */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 
 ul.hr {
@@ -80,16 +86,19 @@ ul.hr {
     padding: 10px; /* Значение полей */
    }
    ul.hr li {
-    display: inline; /* Отображать как строчный элемент */
-    margin-right: 100px; /* Отступ слева */
+    display: inline-block; /* Отображать как строчный элемент */
+    margin: 0 3em 0 3em;/* Отступ слева */
     border: 1px solid #ffffff; /* Рамка вокруг текста */
     padding: 5px; /* Поля вокруг текста */
    }
 li{
-   list-style-type: disc;
+   list-style-type: circle;
+   line-height:2;
+   font-weight: bold;
    }
  </style>
 </head>
+
 <body>
  <header>
  <font color="#ffffff">
@@ -100,7 +109,7 @@ li{
   <li>Статьи</li>
   <li>Контакты</li>
   </ul>
-  <h1> Homey Kitchen</h1>
+  <h1> HOMEY KITCHEN </h1>
   <h2 align="center">
   <pre style="background-color: #614f49">
   Сайт аппетитных и качественных рецептов</pre>
@@ -109,11 +118,13 @@ li{
   </font>
 </header>
 <main>
-/* картинка */
 </main>
+
 <aside>
   <font color="#ffffff">
-  <center><h1>О нас</h1></center>
+  <center>
+      <h1>О нас</h1>
+  </center>
   <p align="center">У нас Вы сможете найти различные рецепты вкусных блюд, а главное без труда приготовить их в домашней обстановке! </p>
   <p align="center">Достаточно просто следовать нашей подробной инструкции с пошаговыми фотографиями. </p>
   <p align="center">Мы стремимся к тому, чтобы в Вашем распоряжении находились тысячи идей, как приготовить то или иное блюдо.</p>
@@ -124,24 +135,34 @@ li{
 <font color="#ffffff">
 <center>
 <h1>Наши рецепты</h1>
-<table border="0" cellspacing="50" cellpadding="30" width="90%" height="200">
-<tr align="left">
-<td>Тыквенный крем-суп</td>
-<td>Лобно из красной фасоли</td> 
-<td>Овощная паста с грибами</td> 
+<table border="0" cellspacing="20" cellpadding="0" width="90%" height="200">
+<tr align="center">
+<td>ТЫКВЕННЫЙ КРЕМ-СУП</td>
+<td>ОВОЩНАЯ ПАСТА С ГРИБАМИ</td>
+<td>ЛОБИО ИЗ КРАСНОЙ ФАСОЛИ</td>
+
 </tr>
 <tr>
-<td>ячейка 1, второй ряд pumpkin_soup.jpeg</td>
-<td>ячейка 2, второй ряд red_bean_lobio.jpg</td>
-<td>ячейка 3, второй ряд pasta_mushroom.jpg</td>
+<td> <img src="pumpkin_soup.jpg" alt= "ТЫКВЕННЫЙ КРЕМ-СУП"
+    width="250px" height="200px"> </td>
+<td><img src="pasta_mushroom.jpg" alt= "ОВОЩНАЯ ПАСТА С ГРИБАМИ"
+    width="280px" height="200px"> </td>
+<td> <img src="red_bean_lobio.jpg" alt= "ЛОБИО ИЗ КРАСНОЙ ФАСОЛИ"
+    width="250px" height="200px"> </td>
+
 </tr>
 </table>
 </center>
 </font>
 </section>
+
 <footer>
+
  <font color="#ffffff">
- <h1>Начните готовить прямо сейчас!</h1>
+     
+ <h1>
+     <pre style="background-color: #614f49">
+          Начните готовить прямо сейчас!          </h1>
   <h3>Категории рецептов:</h3>
 <li>Завтраки</li>
 <li>Бульоны и супы</li>
